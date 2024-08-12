@@ -2,6 +2,12 @@ body {
   text-align: center;
 }
 
+body:has(option[value="dark"]:checked){
+  background-color: #000;
+  filter: invert(1);
+  -webkit-filter: invert(1);
+}
+
 h1 {
   color: #3b2a2a;
   font-family: Arial, sans-serif;
